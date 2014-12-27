@@ -12,7 +12,7 @@ When setting up a **new OS X system**, you may want to install [Homebrew](https:
 bash <(curl -s https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/bootstrap.sh)
 ```
 
-If you already did this oder don't want to do it, install the **basic dotfiles** now.
+If you already did this or don't want to do it, install the **basic dotfiles** now.
 
 ```bash
 cd ~

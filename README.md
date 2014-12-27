@@ -2,6 +2,8 @@
 
 Dotfiles help you personalize your system. These are mine.
 
+![demo](demo.png)
+
 ## Installing
 
 When setting up a **new OS X system**, you may want to install [Homebrew](https://brew.sh/), [node.js](https://nodejs.org/) and [some tools](bootstrap.sh).

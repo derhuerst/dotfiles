@@ -7,42 +7,30 @@ export PATH=~/Downloads/jdk-8u25/bin:~/bin:$PATH
 
 
 
+# test colors
+# weird bash bugs! took hours -.-
+# http://superuser.com/a/301355
+# http://misc.flogisoft.com/bash/tip_colors_and_formatting
+textNormal="\x01\033[0m\x02"
+textBold="\x01\033[1m\x02"
+textRed="\x01\033[38;5;1m\x02"
+textBlue[1]="\x01\033[38;5;69m\x02"
+textBlue[2]="\x01\033[38;5;27m\x02"
+textBlue[3]="\x01\033[38;5;20m\x02"
+textBlue[4]="\x01\033[38;5;18m\x02"
+textYellow="\x01\033[38;5;220m\x02"
+textGray="\x01\033[90m\x02"
+
+
+
 # Load config scripts
+source ~/.config/ps1.sh
 source ~/.config/aliases.sh
 source ~/.config/completion.sh
 
 
 
-myDefault="\[\033[0m\]"
-myRed="\[\033[31m\]"
-myBlue="\[\033[38;5;67m\]"
-myYellow="\[\033[38;5;220m\]"
-myGray="\[\033[90m\]"
-
-
-
 # Display user and machine in gray, if connected via SSH.
 if [ "$SSH_CONNECTION" ]; then
-	printf "${myGray}Connected to ${myBlue}${HOSTNAME}${myGray} as ${myBlue}${USER}${myGray}.\n${myDefault}"
+	printf $textGray'Connected to '$textYellow$HOSTNAME$textGray' as '$textYellow$USER$textGray'.\n'$textNormal
 fi
-
-
-
-PS1=""
-
-# Add a blank line.
-PS1='\n'$PS1
-
-# Display the exit code of last command in red, if non-zero.
-PS1+='$(myStatus=$?;if [ $myStatus = "0" ]; then echo ""; else echo "'
-PS1+=$myRed'!! $myStatus'$myGray' | '
-PS1+='";fi)'
-
-# Display the working directory in yellow.
-PS1+=$myBlue'$(echo \W) '
-
-# Display the prompt symbol delimiter in gray.
-PS1+=$myYellow'⚡ '
-
-# Switch to default color.
-PS1+=$myDefault

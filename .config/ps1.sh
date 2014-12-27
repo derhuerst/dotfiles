@@ -26,7 +26,7 @@ ps1PrintPath () {
 		ps1PWD=$(dirname $ps1PWD) # move one dir up
 	done
 
-	printf ${ps1Result%?}' ' # todo: remove traling `/`
+	printf '\n'${ps1Result%?}' ' # todo: remove traling `/`
 }
 
 
@@ -38,4 +38,4 @@ ps1PrintPrompt () {
 
 
 
-PS1='\r\n$(ps1PrintExitCode)$(ps1PrintPath)$(ps1PrintPrompt)'
+PS1='$(ps1PrintExitCode)$(ps1PrintPath)$(ps1PrintPrompt)'

@@ -260,7 +260,7 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 printCheck
 
 printLog 'Speed up Mission Control animations.'
-defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock expose-animation-duration -float 0
 printCheck
 
 printLog 'Don’t automatically rearrange Spaces based on most recent use.'

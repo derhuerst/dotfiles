@@ -7,6 +7,7 @@ alias ls='ls -AFGp'
 alias lsl='ls -AFGhlop'
 
 alias ..='cd ..'
+alias ...='cd ../..'
 
 # `o file.txt`: open file in default app
 # `o http://example.com`: open URL in default browser

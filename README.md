@@ -9,7 +9,7 @@ Dotfiles help you personalize your system. These are mine.
 When setting up a **new OS X system**, you may want to install [Homebrew](https://brew.sh/), [node.js](https://nodejs.org/) and [some tools](bootstrap.sh).
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/bootstrap.sh)
+bash <(curl -s https://raw.githubusercontent.com/derhuerst/dotfiles/master/bootstrap.sh)
 ```
 
 If you already did this or don't want to do it, install the **basic dotfiles** now.

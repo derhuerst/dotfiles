@@ -4,6 +4,10 @@ Dotfiles help you personalize your system. These are mine.
 
 ![demo](demo.png)
 
+The dotfiles are [MIT-licensed](LICENSE).
+
+
+
 ## Installing
 
 When setting up a **new OS X system**, you may want to install [Homebrew](https://brew.sh/), [node.js](https://nodejs.org/) and [some tools](bootstrap.sh).
@@ -27,3 +31,9 @@ You may also want to set some sensible OS X defaults.
 ./defaults.sh
 rm defaults.sh # clean up
 ```
+
+
+
+## Contributing
+
+If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/dotfiles/issues).

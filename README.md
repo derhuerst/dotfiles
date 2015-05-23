@@ -1,35 +1,76 @@
 # dotfiles
 
-Dotfiles help you personalize your system. These are mine.
-
 ![demo](demo.png)
 
-The dotfiles are [MIT-licensed](LICENSE).
+**Dotfiles help you personalize your system.** Mine, **made for OS X** and [MIT-licensed](LICENSE), include the following.
+
+- global [`.editorconfig`](http://editorconfig.org/)
+- [`.gitconfig`](http://git-scm.com/docs/git-config#EXAMPLES) and [`.gitignore`](http://git-scm.com/docs/gitignore#_examples)
+- [`.npmrc`](https://docs.npmjs.com/files/npmrc)
+- [`.irbrc`](http://ruby-doc.com/docs/ProgrammingRuby/html/irb.html)
+- global [slap config](https://github.com/slap-editor/slap/blob/master/slap.ini)
+- [`.zshrc`](https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc)
 
 
 
-## Installing
+## Install
 
-When setting up a **new OS X system**, you may want to install [Homebrew](https://brew.sh/), [node.js](https://nodejs.org/) and [some tools](bootstrap.sh).
+Note: You need a [Unix-like operating system](http://en.wikipedia.org/wiki/Unix-like) to install this thing.
 
-```bash
-bash <(curl -s https://raw.githubusercontent.com/derhuerst/dotfiles/master/bootstrap.sh)
+### The easy way, using [osx-setup](https://github.com/derhuerst/osx-setup)
+
+[Install my osx-setup](https://github.com/derhuerst/osx-setup/blob/master/README.md#install) repo, which [installs useful developer stuff](https://github.com/derhuerst/osx-setup/blob/master/README.md#osx-setup--os-x-on-steroids) including everything these dotfiles support. Then run the following code.
+
+```shell
+curl -sSL https://raw.githubusercontent.com/derhuerst/dotfiles/master/install | bash
 ```
 
-If you already did this or don't want to do it, install the **basic dotfiles** now.
 
-```bash
-cd ~
-git clone https://github.com/derhuerst/dotfiles.git dotfiles # pull dotfiles
-mv dotfiles/* ./ # move downloaded files
-rm -rf dotfiles # clean up
+### The manual way
+
+The bare minimum required to install these dotfiles is [Bash](http://de.wikipedia.org/wiki/Bash_%28Shell%29) and [Git](http://git-scm.com/). Bash is already bundled with almost all operating systems. Read more about [how to install Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
+
+If you have an existing `~/.config` directory, back it up.
+
+```shell
+mv ~/.config ~/.config.backup
 ```
 
-You may also want to set some sensible OS X defaults.
+Then, clone this repository using Git.
 
-```bash
-./defaults.sh
-rm defaults.sh # clean up
+```shell
+git clone https://github.com/derhuerst/dotfiles.git ~/.config
+```
+
+Now, you can symlink the configuration files you need.
+
+```shell
+ln -s ~/.config/editorconfig/editorconfig ~/.editorconfig
+ln -s ~/.config/git/gitignore ~/.gitignore
+ln -s ~/.config/git/gitconfig ~/.gitconfig
+ln -s ~/.config/npm/npmrc ~/.npmrc
+ln -s ~/.config/git/irbrc ~/.irbrc
+ln -s ~/.config/zsh/zshrc ~/.zshrc
+```
+
+Additionaly, you can create a [`.hushlogin` file](https://kb.iu.edu/d/acdd) by typing `touch ~/.hushlogin`.
+
+You can install the optional stuff these dotfiles support. Run `brew update` first.
+
+software | how to install on OS X
+:--------|:-------------------------
+[NPM](https://nodejs.org/) | `brew install node`
+[Ruby](https://www.ruby-lang.org/en/documentation/installation/) | preinstalled
+[ZSH](https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#step-1--install-homebrew) | `brew install zsh`
+[slap](https://github.com/slap-editor/slap) | `npm install -g zsh`
+
+If you installed ZSH, rebuild the completion index.
+
+```shell
+source ~/.config/zsh/zshrc
+rm -f ~/.zcompdump
+autoload -Uz compinit
+compinit
 ```
 
 

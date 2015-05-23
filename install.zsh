@@ -13,11 +13,8 @@ touch	~/.hushlogin
 
 
 
-source ~/.config/zsh/zshrc
-
-
-
 # rebuild ZSH completion index
+source ~/.config/zsh/zshrc
 rm -f ~/.zcompdump
 autoload -Uz compinit
 compinit

@@ -9,7 +9,6 @@
 				"npm",
 				"ruby",
 				"slap",
-				"ssh",
 				"zsh"
 			],
 			"file_exclude_patterns": [
@@ -35,10 +34,6 @@
 		{
 			"path": "./slap",
 			"name": "slap"
-		},
-		{
-			"path": "./ssh",
-			"name": "ssh"
 		},
 		{
 			"path": "./zsh",

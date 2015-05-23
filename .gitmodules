@@ -1,0 +1,3 @@
+[submodule "zsh/vibrant-zsh-theme"]
+	path = zsh/vibrant-zsh-theme
+	url = https://github.com/derhuerst/vibrant-zsh-theme.git

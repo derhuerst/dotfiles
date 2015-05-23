@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+
+
+export ZSH='~/.config/zsh'
+export PATH="~/bin:$PATH"
+export DEFAULT_USER='jannis'
+
+
+
+for f in $ZSH/*.zsh; do
+	source $f
+done

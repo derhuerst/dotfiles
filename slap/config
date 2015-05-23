@@ -1,0 +1,5 @@
+[editor.buffer]
+useSpace = false
+tabSize = 4
+visibleWhiteSpace = true
+visibleLineEndings = true

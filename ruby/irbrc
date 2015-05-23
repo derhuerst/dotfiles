@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+
+IRB.conf[:PROMPT][:CUSTOM] = {:PROMPT_I => ">"}
+IRB.conf[:PROMPT_MODE] = :CUSTOM
+IRB.conf[:AUTO_INDENT] = true

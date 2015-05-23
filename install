@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+
+
+if [ -e ~/.config ]; then
+	mv ~/.config ~/.config.backup
+fi
+
+git clone https://github.com/derhuerst/dotfiles.git ~/.config
+source ~/.config/install.zsh

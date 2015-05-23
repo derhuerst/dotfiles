@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "dotfiles",
+			"folder_exclude_patterns": [
+				"editorconfig",
+				"git",
+				"npm",
+				"ruby",
+				"slap",
+				"ssh",
+				"zsh"
+			],
+			"file_exclude_patterns": [
+				"*.sublime-workspace"
+			]
+		},
+		{
+			"path": "./editorconfig",
+			"name": "editorconfig"
+		},
+		{
+			"path": "./git",
+			"name": "git"
+		},
+		{
+			"path": "./npm",
+			"name": "npm"
+		},
+		{
+			"path": "./ruby",
+			"name": "ruby"
+		},
+		{
+			"path": "./slap",
+			"name": "slap"
+		},
+		{
+			"path": "./ssh",
+			"name": "ssh"
+		},
+		{
+			"path": "./zsh",
+			"name": "zsh"
+		}
+	],
+	"settings": {
+		"tab_size": 4,
+		"translate_tabs_to_spaces": false
+	}
+}

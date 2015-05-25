@@ -14,7 +14,6 @@
 	l = log --graph --abbrev-commit --all --date=relative --format=format:'%C(blue)%h%C(reset) %C(dim white)by %an %ar:%C(reset) %s'
 	p = push origin master
 	s = status
-
 	pull-request = !hub pull-request
 	pr = pull-request
 	issues = !hub browse -- issues

@@ -9,6 +9,7 @@ ln -s	~/.config/git/gitconfig				~/.gitconfig
 ln -s	~/.config/npm/npmrc					~/.npmrc
 ln -s	~/.config/git/irbrc					~/.irbrc
 ln -s	~/.config/zsh/zshrc					~/.zshrc
+ln -s	~/.config/bash/bash_profile			~/.bash_profile
 touch	~/.hushlogin
 
 

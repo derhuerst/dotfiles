@@ -51,6 +51,7 @@ ln -s ~/.config/git/gitconfig ~/.gitconfig
 ln -s ~/.config/npm/npmrc ~/.npmrc
 ln -s ~/.config/git/irbrc ~/.irbrc
 ln -s ~/.config/zsh/zshrc ~/.zshrc
+ln -s ~/.config/bash/bash_profile ~/.bash_profile
 ```
 
 Additionaly, you can create a [`.hushlogin` file](https://kb.iu.edu/d/acdd) by typing `touch ~/.hushlogin`.

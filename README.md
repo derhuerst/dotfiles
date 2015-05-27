@@ -7,7 +7,6 @@
 - global [`.editorconfig`](http://editorconfig.org/)
 - [`.gitconfig`](http://git-scm.com/docs/git-config#EXAMPLES) and [`.gitignore`](http://git-scm.com/docs/gitignore#_examples)
 - [`.npmrc`](https://docs.npmjs.com/files/npmrc)
-- [`.irbrc`](http://ruby-doc.com/docs/ProgrammingRuby/html/irb.html)
 - global [slap config](https://github.com/slap-editor/slap/blob/master/slap.ini)
 - [`.zshrc`](https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc)
 
@@ -49,7 +48,6 @@ ln -s ~/.config/editorconfig/editorconfig ~/.editorconfig
 ln -s ~/.config/git/gitignore ~/.gitignore
 ln -s ~/.config/git/gitconfig ~/.gitconfig
 ln -s ~/.config/npm/npmrc ~/.npmrc
-ln -s ~/.config/git/irbrc ~/.irbrc
 ln -s ~/.config/zsh/zshrc ~/.zshrc
 ln -s ~/.config/bash/bash_profile ~/.bash_profile
 ```
@@ -61,7 +59,6 @@ You can install the optional stuff these dotfiles support. Run `brew update` fir
 software | how to install on OS X
 :--------|:-------------------------
 [NPM](https://nodejs.org/) | `brew install node`
-[Ruby](https://www.ruby-lang.org/en/documentation/installation/) | preinstalled
 [ZSH](https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#step-1--install-homebrew) | `brew install zsh`
 [slap](https://github.com/slap-editor/slap) | `npm install -g zsh`
 

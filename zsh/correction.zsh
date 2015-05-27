@@ -14,4 +14,4 @@ alias mysql='nocorrect mysql'
 alias sudo='nocorrect sudo'
 
 # Spell-check commands. Sometimes annoying.
-setopt corrent_all
+setopt correct_all

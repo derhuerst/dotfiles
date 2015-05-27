@@ -3,4 +3,9 @@ Thumbs.db
 
 dotfiles.sublime-workspace
 
-inkscape
+# GTK stuff
+menus/
+
+inkscape/
+
+zsh/history

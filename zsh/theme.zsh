@@ -29,6 +29,6 @@ done
 setopt prompt_subst
 
 # Load the theme
-if [ -f $ZSH/vibrant-zsh-theme/vibrant.zsh-theme ]; then
+if [ -e $ZSH/vibrant-zsh-theme/vibrant.zsh-theme ]; then
 	source $ZSH/vibrant-zsh-theme/vibrant.zsh-theme
 fi

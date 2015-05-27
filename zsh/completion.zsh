@@ -24,8 +24,7 @@ zstyle ':completion::complete:*' use-cache 1
 
 
 # todo: add /usr/local/share/zsh/functions ?
-export fpath=(/usr/local/lib/node_modules/npm/lib/utils/completion.sh /usr/local/share/zsh/site-functions /usr/local/share/zsh-completions $fpath)
-echo "fpath: $fpath"
+fpath+=(/usr/local/lib/node_modules/npm/lib/utils/completion.sh /usr/local/share/zsh/site-functions /usr/local/share/zsh-completions)
 
 # Expand globs.
 setopt GLOB_COMPLETE

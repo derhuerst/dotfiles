@@ -2,12 +2,13 @@
 
 
 
-export ZSH='~/.config/zsh'
-export PATH="~/bin:$PATH"
+export ZSH="$HOME/.config/zsh"
+export PATH="$HOME/bin:$PATH"
 export DEFAULT_USER='jannis'
 
 
 
-for f in $ZSH/*.zsh; do
+f="$ZSH/*.zsh"
+for f in ${(N)~f}; do
 	source $f
 done

@@ -3,6 +3,12 @@
 
 
 
+brew alias u='update'
+brew alias i='install'
+brew alias s='search'
+
+
+
 cd ~/.config
 git submodule init
 git submodule update

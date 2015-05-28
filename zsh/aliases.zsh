@@ -65,9 +65,6 @@ alias g='git'
 alias b='brew'
 
 alias brews='brew list'
-brew alias u='update'
-brew alias i='install'
-brew alias s='search'
 
 
 

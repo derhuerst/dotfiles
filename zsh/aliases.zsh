@@ -21,7 +21,7 @@ alias o='open'
 
 alias md='mkdir -p'
 alias rd='rmdir'
-function mdcd() {
+function mkcd() {
 	mkdir -p "$@"
 	cd "$_"
 }

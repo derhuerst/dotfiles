@@ -4,6 +4,7 @@
 			"path": ".",
 			"name": "dotfiles",
 			"folder_exclude_patterns": [
+				"bash",
 				"editorconfig",
 				"git",
 				"npm",
@@ -14,6 +15,10 @@
 			"file_exclude_patterns": [
 				"*.sublime-workspace"
 			]
+		},
+		{
+			"path": "./bash",
+			"name": "bash"
 		},
 		{
 			"path": "./editorconfig",

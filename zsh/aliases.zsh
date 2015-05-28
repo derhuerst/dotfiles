@@ -88,3 +88,5 @@ alias py='python'
 # miscellaneous
 
 alias sd='sudo'
+# tell sub bash shells to use the `~/.bash_profile`
+alias bash='bash -l'

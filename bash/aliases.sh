@@ -36,3 +36,6 @@ alias dl='cd ~/Downloads/'
 alias wb='cd ~/Web/'
 alias ~='cd ~'
 alias home='cd ~'
+
+# tell sub bash shells to use the `~/.bash_profile`
+alias bash='bash -l'

@@ -3,6 +3,12 @@
 
 
 
+cd ~/.config
+git submodule init
+git submodule update
+
+
+
 ln -s	~/.config/editorconfig/editorconfig	~/.editorconfig
 ln -s	~/.config/git/gitignore				~/.gitignore
 ln -s	~/.config/git/gitconfig				~/.gitconfig

@@ -14,7 +14,7 @@
 
 ## Install
 
-Note: You need a [Unix-like operating system](http://en.wikipedia.org/wiki/Unix-like) to install this thing.
+Note: You need an [Unix-like operating system](http://en.wikipedia.org/wiki/Unix-like) to install this thing.
 
 ### The easy way, using [osx-setup](https://github.com/derhuerst/osx-setup)
 

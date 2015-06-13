@@ -90,3 +90,6 @@ alias py='python'
 alias sd='sudo'
 # tell sub bash shells to use the `~/.bash_profile`
 alias bash='bash -l'
+# Pretty print the path
+# todo: move to ~/bin?
+alias path='echo $PATH | tr -s ":" "\n"'

@@ -19,3 +19,7 @@
 	pr = pull-request
 	issues = !hub browse -- issues
 	i = !hub browse -- issues
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

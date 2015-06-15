@@ -11,7 +11,11 @@
 				"npm",
 				"ruby",
 				"slap",
-				"zsh"
+				"zsh",
+
+				"menus",
+				"inkscape",
+				"configstore",
 			],
 			"file_exclude_patterns": [
 				"*.sublime-workspace"

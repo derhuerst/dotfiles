@@ -1,7 +1,5 @@
 # dotfiles
 
-![demo](demo.png)
-
 **Dotfiles help you personalize your system.** Mine, **made for OS X** and [MIT-licensed](LICENSE), include the following.
 
 - global [`.editorconfig`](http://editorconfig.org/)

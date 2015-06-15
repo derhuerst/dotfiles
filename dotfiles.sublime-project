@@ -7,6 +7,7 @@
 				"bash",
 				"editorconfig",
 				"git",
+				"homebrew",
 				"npm",
 				"ruby",
 				"slap",
@@ -27,6 +28,10 @@
 		{
 			"path": "./git",
 			"name": "git"
+		},
+		{
+			"path": "./homebrew",
+			"name": "homebrew"
 		},
 		{
 			"path": "./npm",

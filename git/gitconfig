@@ -14,11 +14,12 @@
 	d = diff
 	l = log --graph --abbrev-commit --all --date=relative --format=format:'%C(blue)%h%C(reset) %C(dim white)by %an %ar:%C(reset) %s'
 	p = push origin master
+	pl = pull
 	s = status --short
 	pull-request = !hub pull-request
 	pr = pull-request
 	issues = !hub browse -- issues
-	i = !hub browse -- issues
+	i = issues
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

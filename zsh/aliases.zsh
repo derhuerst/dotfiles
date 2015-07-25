@@ -93,3 +93,5 @@ alias bash='bash -l'
 # Pretty print the path
 # todo: move to ~/bin?
 alias path='echo $PATH | tr -s ":" "\n"'
+# credits: https://github.com/sivel/speedtest-cli
+alias speedtest='speedtest --simple --bytes'

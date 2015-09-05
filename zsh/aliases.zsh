@@ -36,7 +36,8 @@ alias -- -x='chmod -x'
 alias spl='mdfind -onlyin .'
 
 alias grep="grep --color=auto --exclude-dir={.bzr,.cvs,.git,.hg,.svn}"
-alias -g G='| grep'
+alias -g G='| grep -A 2 -B 2'
+alias -g G0='| grep'
 
 
 

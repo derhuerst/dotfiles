@@ -21,6 +21,11 @@
 	issues = !hub browse -- issues
 	i = issues
 	r = remote -v
+	f = flow
+	ff = flow feature
+	fr = flow release
+	fh = flow hotfix
+	fs = flow support
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

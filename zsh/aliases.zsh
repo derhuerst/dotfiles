@@ -97,3 +97,6 @@ alias bash='bash -l'
 alias path='echo $PATH | tr -s ":" "\n"'
 # credits: https://github.com/sivel/speedtest-cli
 alias speedtest='speedtest --simple --bytes'
+
+# the amazing localtunnel
+alias tunnel='lt -o --port'

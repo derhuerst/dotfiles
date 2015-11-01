@@ -45,11 +45,10 @@ alias -g G0='| grep'
 
 # frequently used directories
 
-alias -g medien='/Volumes/Medien'
-alias -g md=medien
 alias -g downloads='~/Downloads/'
 alias -g dl=downloads
-alias -g web='~/Web/'
+alias -g web='~/web/'
+alias -g playground='~/playground/'
 alias -g home='~'
 
 

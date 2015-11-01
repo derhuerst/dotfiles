@@ -4,6 +4,7 @@
 
 
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
+export LS_COLORS="Gxfxcxdxbxegedabagacad"
 
 setopt auto_cd
 

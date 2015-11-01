@@ -29,6 +29,8 @@ function mkcd() {
 alias -- +x='chmod +x'
 alias -- -x='chmod -x'
 
+alias tree='tree -axC -L 4 -I ".git|node_modules"'
+
 
 
 # search

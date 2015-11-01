@@ -73,7 +73,6 @@ alias brews='brew list'
 # http-server
 
 alias serve='http-server'
-alias sv=serve
 
 
 
@@ -83,7 +82,6 @@ alias js='node'
 alias cff='coffee'
 alias rb='irb'
 alias py='python'
-alias py='python'
 
 
 
@@ -91,14 +89,11 @@ alias py='python'
 
 alias npmls='npm ls --depth 0'
 
-alias sd='sudo'
 # tell sub bash shells to use the `~/.bash_profile`
 alias bash='bash -l'
 # Pretty print the path
 # todo: move to ~/bin?
 alias path='echo $PATH | tr -s ":" "\n"'
-# credits: https://github.com/sivel/speedtest-cli
-alias speedtest='speedtest --simple --bytes'
 
 # the amazing localtunnel
 alias tunnel='lt -o --port'

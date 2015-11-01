@@ -20,7 +20,7 @@ alias -g ....='../../..'
 alias o='open'
 
 alias md='mkdir -p'
-alias rd='rmdir'
+alias rmr='rmdir'
 function mkcd() {
 	mkdir -p "$@"
 	cd "$_"
@@ -65,8 +65,7 @@ alias g='git'
 
 # HomeBrew
 
-alias b='brew'
-alias brews='brew list'
+alias brewls='brew list'
 
 
 
@@ -79,7 +78,7 @@ alias serve='http-server'
 # REPLs
 
 alias js='node'
-alias cff='coffee'
+alias cs='coffee'
 alias rb='irb'
 alias py='python'
 

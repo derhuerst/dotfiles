@@ -37,6 +37,10 @@ alias tree='tree -axC -L 4 -I ".git|node_modules"'
 
 alias spl='mdfind -onlyin .'
 alias spot='spot -e node_modules'
+function fuz() {
+	file=$(fzf)
+	$1 $file
+}
 
 alias grep="grep --color=auto --exclude-dir={.bzr,.cvs,.git,.hg,.svn}"
 alias -g G='| grep -A 2 -B 2'

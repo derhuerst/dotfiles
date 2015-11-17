@@ -38,7 +38,7 @@ alias tree='tree -axC -L 4 -I ".git|node_modules"'
 alias spl='mdfind -onlyin .'
 alias spot='spot -e node_modules'
 function fuz() {
-	file=$(fzf -q $2)
+	file=$(fzf -q ${2:-''})
 	$1 $file
 }
 

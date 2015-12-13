@@ -1,4 +1,5 @@
 [core]
+	editor = nano
 	pager = cat
 	excludesfile = ~/.gitignore
 [user]

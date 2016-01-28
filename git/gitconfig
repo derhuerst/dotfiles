@@ -13,7 +13,11 @@
 	c = commit -m
 	cl = clone
 	d = diff
-	l = log -10 --abbrev-commit --reverse --date=relative --format=format:'%C(blue)%h%C(reset) %C(dim white)by %an %ar:%C(reset) %s'
+	l = log -10 --abbrev-commit --reverse --date=relative --decorate=short --format=format:'\
+%C(red)%<(7)%h \
+%C(dim white)%<(11,trunc)%an \
+%<(12,trunc)%ar \
+%C(reset)%s'
 	p = push origin
 	pl = pull
 	s = status --short
@@ -27,6 +31,14 @@
 	fr = flow release
 	fh = flow hotfix
 	fs = flow support
+	show = show --format=format:'%n\
+%C(red)%h \
+%C(yellow)%D %n\
+%C(white)%an \
+%C(dim white)%ar %n\
+%C(reset)%s %n'
+	tags = tag -l
+	ref = show-ref --tags --heads --abbrev -h
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

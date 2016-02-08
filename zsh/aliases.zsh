@@ -45,6 +45,7 @@ function fuz() {
 alias grep="grep --color=auto --exclude-dir={.bzr,.cvs,.git,.hg,.svn}"
 alias -g G='| grep -A 2 -B 2'
 alias -g G0='| grep'
+alias -g Gv='| grep -v'
 
 
 
@@ -79,10 +80,11 @@ alias serve='http-server'
 
 
 
-# REPLs
+# programming languages
 
 alias js='node'
 alias cs='coffee'
+alias cbs='coffee -cbs'
 alias rb='irb'
 alias py='python'
 

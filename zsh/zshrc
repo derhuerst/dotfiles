@@ -3,7 +3,7 @@
 
 
 export ZSH=$HOME/.config/zsh
-export PATH=./node_modules/bin:$HOME/bin:$PATH
+export PATH=./node_modules/.bin:$HOME/bin:$PATH
 export DEFAULT_USER='jannis'
 
 

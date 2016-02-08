@@ -1,6 +1,6 @@
 [core]
 	editor = nano
-	pager = cat
+	pager = diff-highlight | diff-so-fancy
 	excludesfile = ~/.gitignore
 [user]
 	name = Jannis R
@@ -49,3 +49,8 @@
 	insteadOf = git://github.com
 [push]
 	default = matching
+[color "diff-highlight"]
+	oldNormal = red
+	oldHighlight = red bold 52
+	newNormal = green
+	newHighlight = green bold 22

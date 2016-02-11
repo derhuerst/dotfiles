@@ -18,6 +18,11 @@
 %C(dim white)%<(11,trunc)%an \
 %<(12,trunc)%ar \
 %C(reset)%s'
+	ll = log -10 --abbrev-commit --reverse --date=relative --decorate=short --format=format:'\
+%C(red)%<(7)%h \
+%C(dim white)%<(11,trunc)%an \
+%<(12,trunc)%ar \
+%C(reset)%C(yellow)%s%C(reset)' --stat-name-width=50 --stat-count=20
 	p = push origin
 	pl = pull
 	s = status --short

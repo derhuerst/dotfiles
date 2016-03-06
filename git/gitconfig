@@ -10,9 +10,14 @@
 [alias]
 	a = add
 	aa = add --all
+	b = branch --list -v
 	c = commit -m
+	amd = commit --amend
 	cl = clone
 	d = diff
+	f = flow
+	issues = !hub browse -- issues
+	i = issues
 	l = log -10 --abbrev-commit --reverse --date=relative --decorate=short --format=format:'\
 %C(red)%<(7)%h \
 %C(dim white)%<(11,trunc)%an \
@@ -25,25 +30,24 @@
 %C(reset)%C(yellow)%s%C(reset)' --stat-name-width=50 --stat-count=20
 	p = push origin
 	pl = pull
-	s = status --short
-	pull-request = !hub pull-request
+	plr = pull --rebase
 	pr = pull-request
-	issues = !hub browse -- issues
-	i = issues
+	pull-request = !hub pull-request
 	r = remote -v
-	f = flow
-	ff = flow feature
-	fr = flow release
-	fh = flow hotfix
-	fs = flow support
+	rb = rebase
+	rbc = rebase --continue
+	ref = show-ref --tags --heads --abbrev -h
+	s = status -sb
 	show = show --format=format:'%n\
 %C(red)%h \
 %C(yellow)%D %n\
 %C(white)%an \
 %C(dim white)%ar %n\
 %C(reset)%s %n'
+	st = stash
+	stl = stash list
+	stp = stash pop
 	tags = tag -l
-	ref = show-ref --tags --heads --abbrev -h
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

@@ -36,6 +36,7 @@
 	r = remote -v
 	rb = rebase
 	rbc = rebase --continue
+	rbi = rebase -i
 	ref = show-ref --tags --heads --abbrev -h
 	s = status -sb
 	show = show --format=format:'%n\

@@ -1,14 +1,13 @@
 .DS_Store
 Thumbs.db
 
-dotfiles.sublime-workspace
-
 # GTK stuff
 menus/
-
 inkscape/
 
 configstore
 
 zsh/history
 hub
+fish/fish_history
+fish/fishd.*

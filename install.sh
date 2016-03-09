@@ -15,3 +15,5 @@ ln -s ~/.config/git/gitconfig             ~/.gitconfig
 ln -s ~/.config/homebrew/brew-aliases     ~/.brew-aliases
 ln -s ~/.config/npm/npmrc                 ~/.npmrc
 touch ~/.hushlogin
+
+fisher install vibrant

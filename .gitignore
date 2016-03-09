@@ -7,9 +7,9 @@ inkscape
 
 asciinema
 configstore
-fish
 fisherman
 hub
 zsh
 
+fish/*
 !fish/config.fish

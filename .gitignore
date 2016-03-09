@@ -2,12 +2,14 @@
 Thumbs.db
 
 # GTK stuff
-menus/
-inkscape/
+menus
+inkscape
 
+asciinema
 configstore
-
-zsh/history
+fish
+fisherman
 hub
-fish/fish_history
-fish/fishd.*
+zsh
+
+!fish/config.fish

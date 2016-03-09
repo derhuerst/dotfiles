@@ -4,8 +4,8 @@ source $fisher_home/config.fish
 
 
 # Disable the Pager
-set -g PAGER    cat
-set -g MANPAGER cat
+set -x PAGER    cat
+set -x MANPAGER cat
 
 
 # Default Editor
@@ -15,6 +15,7 @@ else;                    set -g EDITOR st;               end
 
 # Path
 set fish_user_paths ./node_modules/.bin $HOME/bin $fish_user_paths ^ /dev/null
+
 
 # File Handling
 function ls;     command ls -AFGpa $argv;                end
@@ -30,6 +31,14 @@ function o
 	else;               command open $argv[1];           end
 end
 
+function tree
+	command tree -aFC -L 4 --dirsfirst --sort=name $argv
+end
+function ftree # flat tree
+	command tree -afFiC -L 4 --dirsfirst --sort=name $argv
+end
+
+
 # Search
 function spl;    command mdfind -onlyin . $argv;         end
 function spot;   command spot -e node_modules $argv;     end
@@ -41,11 +50,13 @@ function fuz
 	else; $argv[1] (fuz); end
 end
 
+
 # Directories
 function home;       command echo $HOME;                 end
 function downloads;  command echo "$HOME/Downloads";     end
 function web;        command echo "$HOME/web";           end
 function playground; command echo "$HOME/playground";    end
+
 
 # Programming
 function git;    command hub $argv;                      end
@@ -55,6 +66,8 @@ function cs;     command coffee $argv;                   end
 function cbs;    command coffee -cbs;                    end
 function npmls;  command npm ls --depth 0;               end
 
+
 # Miscellaneous
 function serve;  command http-server .;                  end # https://github.com/indexzero/http-server#readme
 function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
+function dns;    command dig +short $argv;               end

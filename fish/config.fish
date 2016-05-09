@@ -32,10 +32,10 @@ function o
 end
 
 function tree
-	command tree -aFC -L 4 --dirsfirst --sort=name $argv
+	command tree -aFC -L 4 -I 'node_modules|.git' --dirsfirst --sort=name $argv
 end
 function ftree # flat tree
-	command tree -afFiC -L 4 --dirsfirst --sort=name $argv
+	command tree -afFiC -L 4 -I 'node_modules|.git' --dirsfirst --sort=name $argv
 end
 
 

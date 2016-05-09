@@ -47,7 +47,7 @@
 %C(reset)%s %n'
 	st = stash
 	stl = stash list
-	stp = stash pop
+	stp = stash pop -q
 	tags = tag -l
 [filter "lfs"]
 	clean = git lfs clean %f

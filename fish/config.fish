@@ -71,3 +71,4 @@ function npmls;  command npm ls --depth 0;               end
 function serve;  command http-server .;                  end # https://github.com/indexzero/http-server#readme
 function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
 function dns;    command dig +short $argv;               end
+function c;      command clear;                          end

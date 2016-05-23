@@ -23,8 +23,6 @@ function lsa;    command ls -AFGhlop $argv;              end
 function ...;    command ../..;                          end
 function ....;   command ../../..;                       end
 function mkcd;   command mkdir -p $argv[1]; cd $argv[1]; end
-function -- -x;  command chmod -x $argv[1];              end
-function -- +x;  command chmod +x $argv[1];              end
 
 function o
 	if [ -n $argv[2] ]; command open -a $argv[2] $argv[1]

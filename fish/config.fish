@@ -70,11 +70,3 @@ function serve;  command http-server .;                  end # https://github.co
 function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
 function dns;    command dig +short $argv;               end
 function c;      command clear;                          end
-
-
-
-# temporarily use NVM, see npm/npm#5082
-set -x NVM_DIR $HOME/.nvm
-function nvm;
-	bass source (brew --prefix nvm)"/nvm.sh --no-use ;nvm $argv"
-end

@@ -50,13 +50,13 @@ end
 
 
 # Directories
-function home;       command echo $HOME;                 end
-function downloads;  command echo "$HOME/Downloads";     end
-function playground; command echo "$HOME/playground";    end
+function home;       builtin echo $HOME;                 end
+function downloads;  builtin echo "$HOME/Downloads";     end
+function playground; builtin echo "$HOME/playground";    end
 
 function web
-	if [ -n $argv[1] ]; command cd $argv[1];
-	else;               command echo "$HOME/web";        end
+	if [ -n $argv[1] ]; builtin cd $HOME'/web/'$argv[1];
+	else;               builtin echo "$HOME/web";        end
 end
 
 

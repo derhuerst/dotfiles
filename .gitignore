@@ -4,12 +4,14 @@ Thumbs.db
 # GTK stuff
 menus
 inkscape
+wireshark
+fontforge
+gtk-2.0
 
 asciinema
 configstore
 fisherman
 hub
-zsh
 
 fish/*
 !fish/config.fish

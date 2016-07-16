@@ -52,8 +52,12 @@ end
 # Directories
 function home;       command echo $HOME;                 end
 function downloads;  command echo "$HOME/Downloads";     end
-function web;        command echo "$HOME/web";           end
 function playground; command echo "$HOME/playground";    end
+
+function web
+	if [ -n $argv[1] ]; command cd $argv[1];
+	else;               command echo "$HOME/web";        end
+end
 
 
 # Programming
@@ -63,6 +67,7 @@ function js;     command node $argv;                     end
 function cs;     command coffee $argv;                   end
 function cbs;    command coffee -cbs;                    end
 function npmls;  command npm ls --depth 0;               end
+function np;     command np --skip-cleanup $argv;        end
 
 
 # Miscellaneous

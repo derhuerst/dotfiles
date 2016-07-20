@@ -75,3 +75,6 @@ function serve;  command http-server .;                  end # https://github.co
 function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
 function dns;    command dig +short $argv;               end
 function c;      command clear;                          end
+function ssh-tunnel
+	command ssh -nNT -L $argv[2]':localhost:'$argv[2] $argv[1]
+end

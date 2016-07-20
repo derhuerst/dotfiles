@@ -6,7 +6,7 @@
 - [`.gitconfig`](http://git-scm.com/docs/git-config#EXAMPLES) and [`.gitignore`](http://git-scm.com/docs/gitignore#_examples)
 - [`.npmrc`](https://docs.npmjs.com/files/npmrc)
 - global [slap config](https://github.com/slap-editor/slap/blob/master/slap.ini)
-- [`.zshrc`](https://wiki.archlinux.org/index.php/Zsh#Simple_.zshrc)
+- [`config.fish`](http://fishshell.com/docs/current/index.html#initialization)
 
 
 
@@ -47,8 +47,6 @@ ln -s ~/.config/git/gitignore ~/.gitignore
 ln -s ~/.config/git/gitconfig ~/.gitconfig
 ln -s ~/.config/homebrew/brew-aliases ~/.brew-aliases
 ln -s ~/.config/npm/npmrc ~/.npmrc
-ln -s ~/.config/zsh/zshrc ~/.zshrc
-ln -s ~/.config/bash/bash_profile ~/.bash_profile
 ```
 
 Additionaly, you can create a [`.hushlogin` file](https://kb.iu.edu/d/acdd) by typing `touch ~/.hushlogin`.
@@ -58,17 +56,8 @@ You can install the optional stuff these dotfiles support. Run `brew update` fir
 software | how to install on OS X
 :--------|:-------------------------
 [NPM](https://nodejs.org/) | `brew install node`
-[ZSH](https://gist.github.com/derhuerst/12a1558a4b408b3b2b6e#step-1--install-homebrew) | `brew install zsh`
+[Fish](http://fishshell.com/) | `brew install zsh`
 [slap](https://github.com/slap-editor/slap) | `npm install -g zsh`
-
-If you installed ZSH, rebuild the completion index.
-
-```shell
-source ~/.config/zsh/zshrc
-rm -f ~/.zcompdump
-autoload -Uz compinit
-compinit
-```
 
 
 

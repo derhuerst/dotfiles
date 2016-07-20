@@ -67,7 +67,7 @@ function js;     command node $argv;                     end
 function cs;     command coffee $argv;                   end
 function cbs;    command coffee -cbs;                    end
 function npmls;  command npm ls --depth 0;               end
-function np;     command np --skip-cleanup $argv;        end
+function np;     command np --skip-cleanup $argv[1];     end
 
 
 # Miscellaneous

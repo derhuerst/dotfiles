@@ -54,11 +54,6 @@ function home;       builtin echo $HOME;                 end
 function downloads;  builtin echo "$HOME/Downloads";     end
 function playground; builtin echo "$HOME/playground";    end
 
-function web
-	if [ -n $argv[1] ]; builtin cd $HOME'/web/'$argv[1];
-	else;               builtin echo "$HOME/web";        end
-end
-
 
 # Programming
 function git;    command hub $argv;                      end

@@ -14,5 +14,6 @@ fisherman
 hub
 
 fish/*
+!fish/install.fish
 !fish/config.fish
 !fish/fishfile

@@ -18,4 +18,4 @@ touch ~/.hushlogin
 
 
 
-fisher # install things in fish/fishfile
+fish fish/install.fish

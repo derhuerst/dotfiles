@@ -43,10 +43,7 @@ function spot;   command spot -e node_modules $argv;     end
 function G0;     command grep $argv;                     end
 function Gv;     command grep -v $argv;                  end
 
-function fuz
-	if [ -n $argv[2] ]; $argv[1] (fuz -q $argv[2])
-	else; $argv[1] (fuz); end
-end
+function fuz;    command fzf | command xargs st {};      end
 
 
 # Directories

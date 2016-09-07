@@ -5,6 +5,7 @@
 [user]
 	name = Jannis R
 	email = mail@jannisr.de
+	signingkey = 296A88A5
 [credential]
 	helper = osxkeychain
 [alias]
@@ -53,10 +54,6 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-[hub]
-	protocol = https
-[url "https://github.com"]
-	insteadOf = git://github.com
 [push]
 	default = matching
 [color "diff-highlight"]
@@ -64,3 +61,5 @@
 	oldHighlight = red bold 52
 	newNormal = green
 	newHighlight = green bold 22
+[commit]
+	gpgsign = true

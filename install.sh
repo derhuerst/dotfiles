@@ -1,13 +1,8 @@
 #!/bin/sh
-# Symlinks the config files and sets up ZSH.
-
-
 
 cd ~/.config
 git submodule init
 git submodule update
-
-
 
 ln -s ~/.config/editorconfig/editorconfig ~/.editorconfig
 ln -s ~/.config/git/gitignore             ~/.gitignore

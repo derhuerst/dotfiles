@@ -56,8 +56,8 @@ You can install the optional stuff these dotfiles support. Run `brew update` fir
 software | how to install on OS X
 :--------|:-------------------------
 [NPM](https://nodejs.org/) | `brew install node`
-[Fish](http://fishshell.com/) | `brew install zsh`
-[slap](https://github.com/slap-editor/slap) | `npm install -g zsh`
+[Fish](http://fishshell.com/) | `brew install fish`
+[slap](https://github.com/slap-editor/slap) | `npm install -g slap`
 
 
 

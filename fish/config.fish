@@ -4,8 +4,7 @@ set -x MANPAGER cat
 
 
 # Default Editor
-if test $SSH_CONNECTION; set -g EDITOR nano
-else;                    set -g EDITOR st;               end
+set -g EDITOR nano
 
 
 # Path

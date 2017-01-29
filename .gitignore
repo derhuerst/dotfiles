@@ -17,3 +17,5 @@ fish/*
 !fish/install.fish
 !fish/config.fish
 !fish/fishfile
+
+npm/npmrc

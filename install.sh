@@ -14,3 +14,4 @@ touch ~/.hushlogin
 
 
 fish fish/install.fish
+fish npm/install.fish

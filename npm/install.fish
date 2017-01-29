@@ -1,0 +1,7 @@
+#!/bin/fish
+
+set -U NPM_CONFIG_INIT_AUTHOR_NAME 'Jannis R'
+set -U NPM_CONFIG_INIT_AUTHOR_EMAIL 'mail@jannisr.de'
+set -U NPM_CONFIG_INIT_LICENSE 'isc'
+set -U NPM_CONFIG_INIT_VERSION '0.1.0'
+set -U NPM_CONFIG_PROGRESS 'false'

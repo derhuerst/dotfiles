@@ -9,7 +9,7 @@ ln -s ~/.config/git/gitignore             ~/.gitignore
 ln -s ~/.config/git/gitconfig             ~/.gitconfig
 ln -s ~/.config/homebrew/brew-aliases     ~/.brew-aliases
 ln -s ~/.config/npm/npmrc                 ~/.npmrc
-ln ~/.config/conductor/index.js        ~/.conductor.js
+ln -s ~/.config/phoenix/index.js        ~/.phoenix.js
 touch ~/.hushlogin
 
 

@@ -57,7 +57,6 @@ function np;     command np --skip-cleanup $argv[1];     end
 
 
 # Miscellaneous
-function serve;  command http-server .;                  end # https://github.com/indexzero/http-server#readme
 function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
 function dns;    command dig +short $argv;               end
 function c;      command clear;                          end

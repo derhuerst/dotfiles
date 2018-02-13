@@ -1,6 +1,6 @@
 [core]
 	editor = nano
-	pager = diff-highlight | diff-so-fancy
+	pager = diff-so-fancy
 	excludesfile = ~/.gitignore
 [user]
 	name = Jannis R

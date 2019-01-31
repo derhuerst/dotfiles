@@ -55,7 +55,7 @@
 	smudge = git lfs smudge %f
 	required = true
 [push]
-	default = matching
+	default = current
 [color "diff-highlight"]
 	oldNormal = red
 	oldHighlight = red bold 52

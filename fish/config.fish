@@ -33,7 +33,7 @@ end
 
 # Search
 function spl;    command mdfind -onlyin . $argv;         end
-function spot;   command spot -e node_modules $argv;     end
+function spot;   command rg $argv;                       end
 function G0;     command grep $argv;                     end
 function Gv;     command grep -v $argv;                  end
 
@@ -63,3 +63,4 @@ function c;      command clear;                          end
 function ssh-tunnel
 	command ssh -nNT -L $argv[2]':localhost:'$argv[2] $argv[1]
 end
+set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths

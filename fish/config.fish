@@ -4,7 +4,7 @@ set -x MANPAGER cat
 
 
 # Default Editor
-set -g EDITOR nano
+set -g EDITOR 'st --wait'
 
 
 # Path

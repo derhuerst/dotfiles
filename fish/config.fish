@@ -3,6 +3,8 @@ set -x PAGER    cat
 set -x MANPAGER cat
 
 
+set -x NODE_ENV dev
+
 # Default Editor
 set -g EDITOR 'st --wait'
 
@@ -53,6 +55,8 @@ function npmls;  command npm ls --depth 0;               end
 
 
 # Miscellaneous
+function each; command gxargs -L1 -I% $argv;              end
+
 # https://github.com/localtunnel/localtunnel#readme
 function tunnel; command lt -o $argv;                    end
 

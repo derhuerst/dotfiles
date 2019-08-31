@@ -36,8 +36,9 @@
 	pull-request = !hub pull-request
 	r = remote -v
 	rb = rebase
-	rbc = rebase --continue
 	rbi = rebase -i
+	rbc = rebase --continue
+	rba = rebase --abort
 	ref = show-ref --tags --heads --abbrev -h
 	s = status -sb
 	show = show --format=format:'%n\

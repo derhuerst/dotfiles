@@ -19,3 +19,6 @@ fish/*
 !fish/fishfile
 
 npm/npmrc
+
+gcloud
+vim

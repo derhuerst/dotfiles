@@ -41,7 +41,6 @@ function fuz;    command fzf | command xargs st {};      end
 
 
 # Directories
-function home;       builtin echo $HOME;                 end
 function downloads;  builtin echo "$HOME/Downloads";     end
 function playground; builtin echo "$HOME/playground";    end
 
@@ -50,17 +49,16 @@ function playground; builtin echo "$HOME/playground";    end
 function git;    command hub $argv;                      end
 function g;      command hub $argv;                      end
 function js;     command node $argv;                     end
-function cs;     command coffee $argv;                   end
-function cbs;    command coffee -cbs;                    end
 function npmls;  command npm ls --depth 0;               end
-function np;     command np --skip-cleanup $argv[1];     end
 
 
 # Miscellaneous
-function tunnel; command lt -o $argv;                    end # https://github.com/localtunnel/localtunnel#readme
+# https://github.com/localtunnel/localtunnel#readme
+function tunnel; command lt -o $argv;                    end
+
 function dns;    command dig +short $argv;               end
 function c;      command clear;                          end
+
 function ssh-tunnel
 	command ssh -nNT -L $argv[2]':localhost:'$argv[2] $argv[1]
 end
-set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths

@@ -3,21 +3,24 @@ set -x PAGER    cat
 set -x MANPAGER cat
 
 
-set -x NODE_ENV dev
-
 # Default Editor
 set -g EDITOR 'st --wait'
 
 
 # Path
-set fish_user_paths ./node_modules/.bin $HOME/bin $fish_user_paths ^ /dev/null
+#set fish_user_paths ./node_modules/.bin $HOME/bin $HOME/.local/bin $fish_user_paths
+
+#set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
+#set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+set -p -x PATH "$HOME/go/bin:$HOME/.cargo/bin"
 
 
 # File Handling
 function ls;     command ls -AFGpa $argv;                end
 function lsa;    command ls -AFGhlop $argv;              end
-function ...;    command ../..;                          end
-function ....;   command ../../..;                       end
+function ...;    command cd ../..;                          end
+function ....;   command cd ../../..;                       end
 function mkcd;   command mkdir -p $argv[1]; cd $argv[1]; end
 
 function o
@@ -51,15 +54,33 @@ function playground; builtin echo "$HOME/playground";    end
 function js;     command node $argv;                     end
 function npmls;  command npm ls --depth 0;               end
 
+## csv
+function csv-search; command xsv search $argv; end
+function csv-select; command xsv select $argv; end
+function csv-sort; command xsv sort $argv; end
 
 # Miscellaneous
-function each; command gxargs -L1 -I% $argv;              end
+function each; command gxargs -L1 -I% -- $argv;              end
+
+function diff; command git diff --no-index $argv; end
 
 # https://github.com/localtunnel/localtunnel#readme
 function tunnel; command lt -o $argv;                    end
 
 function dns;    command dig +short $argv;               end
 
+function iso8601
+	command gdate --iso-8601=seconds
+end
+
+function jq-ignore-invalid;
+	command jq -R 'fromjson? | select(type == "object")' $argv
+end
+
 function ssh-tunnel
 	command ssh -nNT -L $argv[2]':localhost:'$argv[2] $argv[1]
 end
+
+eval (starship init fish)
+set -g fish_user_paths "/usr/local/opt/openjdk@11/bin" $fish_user_paths
+fish_add_path /usr/local/opt/curl/bin

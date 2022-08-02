@@ -48,8 +48,6 @@ function playground; builtin echo "$HOME/playground";    end
 
 
 # Programming
-function git;    command hub $argv;                      end
-function g;      command hub $argv;                      end
 function js;     command node $argv;                     end
 function npmls;  command npm ls --depth 0;               end
 
@@ -61,7 +59,6 @@ function each; command gxargs -L1 -I% $argv;              end
 function tunnel; command lt -o $argv;                    end
 
 function dns;    command dig +short $argv;               end
-function c;      command clear;                          end
 
 function ssh-tunnel
 	command ssh -nNT -L $argv[2]':localhost:'$argv[2] $argv[1]

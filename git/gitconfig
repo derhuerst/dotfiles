@@ -1,7 +1,17 @@
 [core]
 	editor = st --wait
-	pager = diff-so-fancy
+	pager = delta
 	excludesfile = ~/.gitignore
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+[merge]
+    # conflictstyle = zdiff3
+    conflictstyle = diff3
+[diff]
+	# algorithm = patience
+    colorMoved = default
 [user]
 	name = Jannis R
 	email = mail@jannisr.de
@@ -31,7 +41,8 @@
 %C(reset)%C(yellow)%s%C(reset)' --stat-name-width=50 --stat-count=20
 	p = push origin
 	pl = pull
-	plr = pull --rebase
+	plr = pull --rebase --quiet
+	fp = fetch --prune --quiet
 	pr = pull-request
 	pull-request = !hub pull-request
 	r = remote -v
@@ -39,6 +50,9 @@
 	rbi = rebase -i
 	rbc = rebase --continue
 	rba = rebase --abort
+	cp = cherry-pick
+	cpc = cherry-pick --continue
+	cpa = cherry-pick --abort
 	ref = show-ref --tags --heads --abbrev -h
 	s = status -sb
 	show = show --format=format:'%n\
@@ -64,3 +78,8 @@
 	newHighlight = green bold 22
 [commit]
 	gpgsign = true
+[gui]
+	encoding = UTF-8
+	editor = st
+[init]
+	defaultBranch = main

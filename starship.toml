@@ -1,0 +1,66 @@
+add_newline = false
+format = """\
+    $username\
+    $hostname\
+    $directory\
+    $git_branch\
+    $git_state\
+    $git_status\
+    $env_var\
+    $cmd_duration\
+    $jobs\
+    $character\
+"""
+
+[username]
+style_user = "yellow"
+
+[hostname]
+style = "green"
+
+[directory]
+truncation_length = 1
+fish_style_pwd_dir_length = 3
+style = "243"
+
+[git_branch]
+symbol = ""
+truncation_length = 8
+style = "33"
+
+[git_state]
+rebase = "rebase"
+merge = "merge"
+revert = "revert"
+cherry_pick = "c-pick"
+bisect = "bisect"
+am = "am"
+am_or_rebase = "am/rebase"
+style = "208"
+
+[git_status]
+conflicted = "!"
+stashed = ""
+modified = "±"
+staged = "⇈"
+# prefix = ""
+# suffix = ""
+style = "160"
+
+[env_var]
+symbol = "e"
+variable = "NODE_ENV"
+style = "dimmed blue"
+
+[cmd_duration]
+min_time = 3000
+style = "yellow"
+format = " [$duration]($style)"
+
+[jobs]
+symbol = "↺"
+style = "blue"
+
+[character]
+success_symbol = ""
+error_symbol = " [✖](bold 196)"

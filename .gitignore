@@ -11,7 +11,14 @@ gtk-2.0
 asciinema
 configstore
 fisherman
-hub
+/gh
+/amfora
+/kitty
+/licensezero
+/restic
+/rust-analyzer
+/conductor
+/git/gitk
 
 fish/*
 !fish/install.fish
